@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus:not(:focus-visible),
+*:active:focus {
+    outline: none;
+}
+
+*:focus {
+    box-shadow: 0 0 0 2px white;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.top-banner {
+    background-color: maroon;
+    position: absolute;
+    padding: 1.5rem 4rem;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    border-radius: 0 0 10px 10px;
+}
+
+p.current-plan {
+    font-size: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+p.plan-type {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.container {
+    text-align: center;
+    width: 1100px;
+    height: 60%;
+    padding-top: 100px;
+  }
+
+h1.title {
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.toggle-switch {
+    display: flex;
+    height: 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.toggler {
+    appearance: none;
+    -webkit-appearance: none;
+   -moz-appearance: none;
+    width: 50px;
+    height: 25px;
+    background-color: maroon;
+    border-radius: 25px;
+    margin: 0 1rem;
+    position: relative;
+    transition: background-color 0.2s;
+}
+
+.toggler::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 4px;
+    transition: right 0.2s;
+}
+
+.toggler:checked {
+    background-color: maroon;
+}
+
+.toggler:checked::before {
+    right: 55%;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.card {
+    height: 700px;
+    width: 250px;
+    background-color: maroon;
+    border-radius: 5px;
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.2s;
+    align-items: center;
+}
+
+.card:hover {
+    transform: scale(1.05)
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-bottom: 1rem;
+}
+
+.card-price {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card-details {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+.card ul li:before{
+    content:"•";
+    margin-right: 0.5rem;
+    color:white;
+    font-size: 1.5rem;
+}
+.card-btn:hover, 
+ .card-btn:hover, 
+  .card-btn:hover,
+  .card-btn{
+    background-color: black;
+  }
+  #maus{
+
+    background:maroon;
+    color:white;
+    border-color: white;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+.card-btn{
+    margin-top: 1rem;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid white;
+    color:white;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+.card ul li{
+    margin-bottom: 0.5rem;
+}
+
+.card-button {
+    display: inline-block;
+    background-color: white;
+    color: maroon;
+    padding: 0.5rem;
+}
+.main-t{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -290px;
+    text-overflow: ellipsis;
+    font-size: x-large;
+    font-style: oblique;
+    font: bold;
+}
+
+ 
